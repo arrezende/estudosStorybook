@@ -28,5 +28,12 @@ const config = {
   docs: {
     autodocs: true,
   },
+  viteFinal: (config, { configType }) => {
+    if (configType === 'PRODUCTION') {
+      config.base = '/estudosStorybook/';
+    }
+
+    return config;
+  },
 };
 export default config;
