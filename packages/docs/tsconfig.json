@@ -1,0 +1,4 @@
+{
+    "extends": "@tupi/ts-config/react.json",
+    "include": ["src"]
+  }
